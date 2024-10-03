@@ -38,12 +38,12 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="90dp"
         android:hint="@string/name"
-        android:preferKeepClear="true"
         app:boxStrokeColor="@android:color/holo_purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconDrawable="@drawable/baseline_person_24">
+        app:startIconDrawable="@drawable/baseline_person_24"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_name"
@@ -124,7 +124,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/Recycler"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:orientation="vertical"
         tools:listitem="@layout/item_contact"
